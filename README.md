@@ -2,7 +2,9 @@
 
 This repository contains the public homepage and privacy notice for one personally operated Hermes Agent instance and its Google Calendar integration.
 
-The homepage is served at `/`; the privacy notice is served at `/privacy/`. The custom domain is `hermes.omkarubale.com`.
+The site source is kept under `pages/` and deployed by GitHub Actions. It serves the homepage at `/` and the privacy notice at `/privacy/` on `hermes.omkarubale.com`.
+
+In the repository's **Settings → Pages**, set the publishing source to **GitHub Actions**. Branch-based publishing supports only the repository root or `/docs`, so it cannot publish directly from `/pages`.
 
 Keep the description of OAuth scopes, server storage, messaging, and model routing aligned with the live configuration. The current setup routes model requests through OpenRouter and stores conversation history in Hermes' local SQLite session database.
 
