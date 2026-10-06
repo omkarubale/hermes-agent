@@ -1,0 +1,11 @@
+.env
+*.env
+*client_secret*.json
+google_token.json
+*_token.json
+credentials/
+secrets/
+*.sqlite
+*.db
+*.log
+__pycache__/
